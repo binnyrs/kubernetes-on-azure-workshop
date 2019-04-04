@@ -3,8 +3,6 @@
 set -e
 set -o pipefail
 
- az account set --subscription "Visual Studio Enterprise"
-
  VNET_RANGE=10.0.0.0/8  
  CLUSTER_SUBNET_RANGE=10.240.0.0/16 
  VNET_NAME=k8sVNet
