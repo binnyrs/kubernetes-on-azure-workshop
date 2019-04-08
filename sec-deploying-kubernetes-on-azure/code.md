@@ -1,6 +1,5 @@
 # Deploying Kubernetes on Azure
 
-
 ## Register EnableNetworkPolicy 
 
 `az feature register --name EnableNetworkPolicy --namespace Microsoft.ContainerService`
@@ -16,4 +15,7 @@ Refresh the Microsoft.ContainerService
 
 ## Create your cluster
 To create your cluster please use the script [here](install.sh)
+
+The cluster will now create a [service principal](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals?WT.mc_id=workshop-github-sccoulto) then a 3 node AKS cluster using  
+the [Azure cni plugin](https://docs.microsoft.com/azure/aks/configure-azure-cni?WT.mc_id=workshop-github-sccoulto) using Calico as the provider. 
 
